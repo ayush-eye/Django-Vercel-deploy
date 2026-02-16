@@ -1,0 +1,16 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+<div class="container">
+    <h2>Set Theme Preference</h2>
+
+    <form method="post">
+        {% csrf_token %}
+        <label>Select Theme:</label>
+        <select name="theme">
+            <option value="Light">Light</option>
+            <option value="Dark">Dark</option>
+        </select>
+        <button type="submit">Save</button>
+    </form>
+</div>

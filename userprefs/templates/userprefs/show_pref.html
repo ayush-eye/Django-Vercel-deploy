@@ -1,0 +1,9 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+<h2>Your Preferences</h2>
+
+<p>Language: {{ language }}</p>
+<p>Theme: {{ theme }}</p>
+
+<a href="/userprefs/">Change Preferences</a>

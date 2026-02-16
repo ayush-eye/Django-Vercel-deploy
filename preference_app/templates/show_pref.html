@@ -1,0 +1,11 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+<div class="container">
+    <h2>Your Preference</h2>
+    <p><strong>Theme:</strong> {{ theme }}</p>
+
+    <a href="/preferences/">
+        <button>Change Preference</button>
+    </a>
+</div>

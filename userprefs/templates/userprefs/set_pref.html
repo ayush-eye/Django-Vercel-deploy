@@ -1,0 +1,19 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+<h2>Set Preferences</h2>
+
+<form method="post">
+    {% csrf_token %}
+    
+    Language:
+    <input type="text" name="language"><br><br>
+
+    Theme:
+    <select name="theme">
+        <option value="Light">Light</option>
+        <option value="Dark">Dark</option>
+    </select><br><br>
+
+    <button type="submit">Save</button>
+</form>

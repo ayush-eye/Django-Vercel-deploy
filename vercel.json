@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "FormHandling/wsgi.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "FormHandling/wsgi.py"
+    }
+  ]
+}
